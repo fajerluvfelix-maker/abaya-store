@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>متجر عبايات</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Cairo", sans-serif;
+      background: #f8f7f4;
+      color: #222;
+    }
+
+    /* Header */
+    header {
+      background: #000;
+      color: #fff;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 22px;
+      font-weight: 700;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    nav a:hover {
+      color: #d8b894;
+    }
+
+    /* Hero */
+    .hero {
+      background: #000;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      font-weight: 800;
+    }
+    .hero p {
+      font-size: 17px;
+      margin-bottom: 20px;
+      opacity: 0.85;
+    }
+    .hero a {
+      background: #d8b894;
+      padding: 12px 30px;
+      border-radius: 6px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    /* Products */
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 26px;
+      font-weight: 800;
+      color: #000;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 20px;
+      padding: 0 25px 40px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      transition: 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    }
+
+    .product-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .product-card p {
+      margin: 0 0 12px;
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .btn-buy {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .btn-buy:hover {
+      background: #333;
+    }
+
+    /* Footer */
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">متجر العبايات</div>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#products">المنتجات</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>عبايات راقية لكل يوم</h1>
+    <p>مجموعة متنوعة من العبايات الخليجية الفاخرة بجودة عالية وتصاميم أنيقة.</p>
+    <a href="#products">تصفح المنتجات</a>
+  </section>
+
+  <!-- Products -->
+  <h2 class="section-title" id="products">منتجاتنا</h2>
+  <section class="products">
+
+    <div class="product-card">
+      <h3>عباية سوداء كلاسيكية</h3>
+      <p>قصّة مريحة وخامة فاخرة مناسبة للاستخدام اليومي.</p>
+      <div class="price">199 ر.س</div>
+      <a href="#" class="btn-buy">اطلب الآن</a>
+    </div>
+
+    <div class="product-card">
+      <h3>عباية لف أنيقة</h3>
+      <p>ستايل راقي مع تفاصيل بسيطة تبرز جمال التصميم.</p>
+      <div class="price">230 ر.س</div>
+      <a href="#" class="btn-buy">اطلب الآن</a>
+    </div>
+
+    <div class="product-card">
+      <h3>عباية رسمية للخروج</h3>
+      <p>لمسات فاخرة تجعلها مناسبة للمناسبات والسهرات.</p>
+      <div class="price">270 ر.س</div>
+      <a href="#" class="btn-buy">اطلب الآن</a>
+    </div>
+
+    <div class="product-card">
+      <h3>عباية عملية مفتوحة</h3>
+      <p>مناسبة للمشاوير اليومية بلمسة عصرية مميزة.</p>
+      <div class="price">220 ر.س</div>
+      <a href="#" class="btn-buy">اطلب الآن</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    © 2025 متجر العبايات — جميع الحقوق محفوظة
+  </footer>
+
+</body>
+</html>
